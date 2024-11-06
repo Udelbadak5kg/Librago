@@ -1,0 +1,184 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+/* Header and Navigation */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+    background-color: #0A1357;
+    color: #fff;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.search-icon {
+    background-color: white;
+    color: #0A1357;
+    border-radius: 50%;
+    padding: 0.5em;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.search-icon i {
+    font-size: 18px;
+}
+
+.nav {
+    display: flex;
+    gap: 0.8em;
+}
+
+.nav-btn {
+    background: none;
+    border: 1px solid #3e508f;
+    border-radius: 20px;
+    color: #202e5d; /* Perbaikan: Hanya satu tanda '#' */
+    padding: 0.5em 1em;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.nav-btn:hover {
+    background-color: #fff;
+    color: #0A1357;
+}
+
+/* Profile Icon */
+.profile-container {
+    position: relative;
+}
+
+.profile-icon {
+    font-size: 36px;
+    color: #fff;
+    cursor: pointer;
+}
+
+/* Alert Timer Section */
+.alert-timer {
+    text-align: center;
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    margin: 1em;
+}
+
+.timer {
+    font-size: 2em;
+    color: red;
+    font-weight: bold;
+}
+
+.alert-message {
+    color: #333;
+    background-color: #ffebeb;
+    padding: 1em;
+    border-radius: 10px;
+    margin-top: 0.5em;
+}
+
+/* Latest Books Section */
+.latest-books {
+    text-align: center;
+    padding: 1em;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 1.5em;
+    color: #0A1357;
+}
+
+.books-container {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    padding: 1em;
+    overflow-x: auto;
+}
+
+.book img {
+    width: 100px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.more-btn {
+    background-color: #0A1357;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.more-btn:hover {
+    background-color: #333;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropbtn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown-content {
+    display: none; /* Dropdown disembunyikan secara default */
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    list-style-type: none; /* Menghilangkan bullet points */
+    padding: 0; /* Menghilangkan padding default */
+    margin: 0; /* Menghilangkan margin default */
+}
+
+.dropdown-content li {
+    padding: 12px 16px;
+}
+
+.dropdown-content li a {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content li:hover {
+    background-color: #f1f1f1;
+}
+
+.show {
+    display: block; /* Menampilkan dropdown ketika kelas 'show' ditambahkan */
+}
+
+
